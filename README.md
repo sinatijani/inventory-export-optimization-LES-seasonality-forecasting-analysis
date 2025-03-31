@@ -1,46 +1,47 @@
-# inventory-optimization-LES-seasonality-forecasting
+# Inventory Optimization: Linear Exponential Smoothing with Seasonality Forecasting
 
-# Indigo T-Shirt
+## Project Overview
 
-I dug into Indigo T-Shirt's export data. This project was all about figuring out how to predict their sales better and keep their inventory on point. Check it out:
+This project focuses on analyzing and forecasting the export data of Indigo T-Shirts from 2017 to 2023 to optimize inventory management. The analysis includes trend and seasonality decomposition, forecasting model development, safety stock calculation, lead time simulation, and profit analysis.
 
-## What I Did & How
+## Analysis and Methodology
 
-* **Data Exploration:**
-    * I took a long look at their quarterly export data from 2017 to 2023.
-    * Broke it down to see the trends, seasonal ups and downs, and the random noise.
-    * Found some interesting stuff: sales were down for a bit, then picked back up, and they sell more in the second quarter.
-* **Forecasting Models:**
-    * Tried out three different ways to predict future sales:
-        * Simple Exponential Smoothing (SES): Easy, but didn't catch everything.
-        * Linear Exponential Smoothing (LES): Better with trends, but not perfect.
-        * Linear Exponential Smoothing with Seasonality (LESwS): This one was the best! Super accurate, with low error rates.
-    * Basically, I tested which model was the most accurate.
-* **Safety Stock:**
-    * Calculated how many extra t-shirts they should keep on hand, using my best forecast.
-    * Helps them avoid running out of stock, even if things get a bit unpredictable.
+* **Exploratory Data Analysis (EDA):**
+    * Performed a detailed analysis of quarterly export data spanning from 2017 to 2023.
+    * Decomposed the time series data to identify trends, seasonal patterns, and residual components.
+    * Observed significant trends, seasonal variations, and key data insights, including periods of sales decline and subsequent recovery, as well as seasonal peaks during the second quarter.
+* **Forecasting Model Development:**
+    * Evaluated and compared three forecasting models:
+        * Simple Exponential Smoothing (SES)
+        * Linear Exponential Smoothing (LES)
+        * Linear Exponential Smoothing with Seasonality (LESwS)
+    * Determined that the LESwS model provided the most accurate forecasts, demonstrating the lowest error rates.
+* **Safety Stock Calculation:**
+    * Calculated the optimal safety stock levels based on the LESwS forecasts to mitigate the risk of stockouts due to demand variability.
 * **Lead Time Simulation:**
-    * Ran a simulation (150 trials) to see how much demand they might get during lead time.
-    * figured out a reorder point.
-    * The results were a bit skewed, meaning lower demand was more common.
+    * Conducted a Monte Carlo simulation (150 trials) to model demand during lead time.
+    * Determined a reorder point based on the simulation results.
+    * Observed a skewed distribution in demand, indicating a higher probability of lower demand scenarios.
 * **Profit Analysis:**
-    * Looked at how much profit they could make, considering different demand scenarios.
-    * Figured out the risks involved in aiming for higher profits.
+    * Evaluated potential profit outcomes under various demand scenarios.
+    * Quantified the risks associated with pursuing higher profit margins.
 
-## What I Learned
+## Key Findings
 
-* **Forecasting is Key:** Getting the forecasts right is super important for inventory.
-* **Simulations are Powerful:** They help you see what *could* happen, not just what *will* happen.
-* **Data tells a story:** There's a lot you can learn from looking closely at the numbers.
+* Accurate forecasting is critical for effective inventory optimization.
+* Simulation techniques provide valuable insights into potential demand variability and risk.
+* Detailed data analysis reveals actionable patterns and trends.
 
-## Why This Matters
+## Professional Competencies Demonstrated
 
-This project proves I can:
+This project showcases the following competencies:
 
-* Handle time series data like a pro.
-* Build and test forecasting models.
-* Use stats to solve real business problems.
-* Run simulations and understand risk.
-* Give solid, actionable advice.
+* Proficiency in time series data analysis.
+* Development and evaluation of forecasting models.
+* Application of statistical methods to solve business problems.
+* Execution and interpretation of simulation analyses.
+* Delivery of data-driven, actionable recommendations.
 
-Basically, I can use data to make businesses run smoother.
+## Impact
+
+This analysis provides Indigo T-Shirts with a data-driven framework to enhance inventory management, reduce stockout risks, and optimize profitability.
